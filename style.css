@@ -369,6 +369,7 @@ nav .fa {
     z-index: 2;
     transition: 1s;
     display: block;
+    border-radius: 0 0 0 70%;
   }
 
   nav .fa {
