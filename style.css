@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* SECTION HEADER STYLING */
+
+.header {
+  min-height: 130vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?t=st=1647580455~exp=1647581055~hmac=8e4f36a5dcc47268f74c6c8677705cab01cbb4b36bab90ff9b51ef66ab14d927&w=1060");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* NAVIGATION BAR STYLING */
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 2% 6%;
+  justify-content: space-between;
+}
+nav img {
+  width: 86px;
+  height: 78px;
+  border-radius: 32px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* SECTION TEXT-BOX STYLING */
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 60px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: #fff;
+}
+.text-box-btn {
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  /* position: relative; */
+  cursor: pointer;
+  /* background: transparent; */
+  transition: 1s;
+}
+.text-box-btn:hover {
+  border: 2px solid #f44336;
+  background-color: #f44336;
+  border-radius: 20px;
+}
+
+/* ABOUT SECTION STYLING */
+
+.about {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.about h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.about p {
+  font-size: 15px;
+  font-weight: 300;
+  color: grey;
+  line-height: 22px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.row h3 {
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: 600;
+}
+.about-col {
+  background: #fff3f3;
+  border-radius: 10px;
+  flex-basis: 31%;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+.about-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* SECTION ABOUT-IMG STYLING */
+
+.classification {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.classification-col {
+  border-radius: 20px;
+  flex-basis: 32%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(85, 83, 83);
+}
+.classification-col img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+  transition: 1s;
+}
+.layer h3 {
+  width: 100%;
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+.advantages {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.advantages-col {
+  text-align: left;
+  border-radius: 10px;
+  flex-basis: 32%;
+}
+.advantages-col img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
+.advantages-col img:hover {
+  box-shadow: 0 0 20px 0px rgba(26, 24, 24);
+}
+.advantages-col h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+.advantages-col p {
+  font-size: 15px;
+  font-weight: 300;
+}
+/* SECTION TESTIMONIAL STYLING */
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.testimonials h1 {
+  margin-bottom: 15px;
+}
+
+.tesimonials-col {
+  flex-basis: 39%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  /* display: flex; */
+}
+.tesimonials-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.tesimonials-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+.tesimonials-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.tesimonials-col .fa {
+  color: #f44336;
+}
+.contact {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("https://img.freepik.com/free-photo/tropical-interior-design-living-room_269031-60.jpg?w=1380");
+  width: 80%;
+  /* margin: auto; */
+  margin: 40px auto;
+  padding: 100px 0px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: 10px;
+  /* height: 50vh; */
+}
+.contact h1 {
+  color: #fff;
+}
+.contact p {
+  color: #fff;
+}
+.contact-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  /* position: relative; */
+  cursor: pointer;
+  background: transparent;
+  transition: 1s;
+  margin-top: 15px;
+}
+.contact-btn:hover {
+  border: 2px solid #f44336;
+  background-color: #f44336;
+  border-radius: 20px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+}
+.footer h1 {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 34px;
+}
+.icons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  padding: 18px 0;
+  cursor: pointer;
+  font-size: 30px;
+}
+.fa-heart-o {
+  color: #f44336;
+}
+nav .fa {
+  display: none;
+}
+
+/* MEDIA QUERY */
+
+/* FOR MAINTING ROWS STYLING IN PHONE  */
+
+@media (max-width: 863px) {
+  .row {
+    flex-direction: column;
+  }
+  .classification-col {
+    border-radius: 20px;
+    flex-basis: 32%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(85, 83, 83);
+    margin-bottom: 15px;
+  }
+}
+/* @media (max-width: 410px) {
+  .tesimonials-col {
+    flex-basis: 39%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 0px;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+  }
+  .footer h1 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+} */
+@media (min-width: 300px) and (max-width: 768px) {
+  .text-box h1 {
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  #navLinks {
+    position: absolute;
+    background: #f44336;
+    height: 158vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    display: block;
+  }
+
+  nav .fa {
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-box h1 {
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+}
+@media (min-width: 664px) and (max-width: 864px) {
+  /* .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  } */
+}
+@media (min-width: 463px) and (max-width: 663px) {
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header {
+    min-height: 118vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url("https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?t=st=1647580455~exp=1647581055~hmac=8e4f36a5dcc47268f74c6c8677705cab01cbb4b36bab90ff9b51ef66ab14d927&w=1060");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+}
+@media (min-width: 270px) and (max-width: 462px) {
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .tesimonials-col {
+    flex-basis: 39%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    cursor: pointer;
+    /* display: flex; */
+  }
+  .about {
+    width: 80%;
+    margin: auto;
+    padding-top: 35px;
+    text-align: center;
+  }
+  .advantages {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .classification {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .header {
+    min-height: 158vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url("https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?t=st=1647580455~exp=1647581055~hmac=8e4f36a5dcc47268f74c6c8677705cab01cbb4b36bab90ff9b51ef66ab14d927&w=1060");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+}
