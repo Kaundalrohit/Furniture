@@ -361,7 +361,7 @@ nav .fa {
   #navLinks {
     position: absolute;
     background: #f44336;
-    height: 59vh;
+    height: 167vh;
     width: 200px;
     top: 0;
     right: 0;
@@ -429,7 +429,7 @@ nav .fa {
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 56%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
