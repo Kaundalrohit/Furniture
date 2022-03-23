@@ -7,7 +7,7 @@
 /* SECTION HEADER STYLING */
 
 .header {
-  min-height: 130vh;
+  min-height: 600px;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?t=st=1647580455~exp=1647581055~hmac=8e4f36a5dcc47268f74c6c8677705cab01cbb4b36bab90ff9b51ef66ab14d927&w=1060");
@@ -344,10 +344,16 @@ nav .fa {
     font-size: 25px;
   }
 } */
+
 @media (min-width: 300px) and (max-width: 768px) {
   .text-box h1 {
     font-size: 20px;
     padding-bottom: 12px;
+  }
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
   }
   .nav-links ul li {
     display: block;
@@ -378,8 +384,13 @@ nav .fa {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .text-box h1 {
-    font-size: 20px;
+    font-size: 50px;
     padding-bottom: 12px;
+  }
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 22px;
+    color: #fff;
   }
 }
 @media (min-width: 664px) and (max-width: 864px) {
@@ -398,13 +409,13 @@ nav .fa {
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 59%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
   .header {
-    min-height: 118vh;
+    min-height: 520px;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url("https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?t=st=1647580455~exp=1647581055~hmac=8e4f36a5dcc47268f74c6c8677705cab01cbb4b36bab90ff9b51ef66ab14d927&w=1060");
@@ -418,7 +429,7 @@ nav .fa {
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 58%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -451,7 +462,7 @@ nav .fa {
     text-align: center;
   }
   .header {
-    min-height: 498px;
+    min-height: 540px;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
       url("https://img.freepik.com/free-photo/living-room-interior-wall-mockup-warm-tones-with-leather-sofa-which-is-kitchen-3d-rendering_41470-3753.jpg?t=st=1647580455~exp=1647581055~hmac=8e4f36a5dcc47268f74c6c8677705cab01cbb4b36bab90ff9b51ef66ab14d927&w=1060");
